@@ -1,93 +1,131 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>All Tools Kz</title>
+    <title>All Tools AstroCat</title>
 
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
 
+<!-- HERO -->
 <header class="hero">
 
-    <video
-        id="heroVideo"
-        autoplay
-        muted
-        loop
-        playsinline>
-
-        <!-- GANTI URL VIDEO DI SINI -->
-        <source src="VIDEO_URL.mp4" type="video/mp4">
-
+    <!-- GANTI VIDEO DI SINI -->
+    <video autoplay muted loop playsinline id="heroVideo">
+        <source src="YOUR_VIDEO_URL.mp4" type="video/mp4">
     </video>
 
-    <div class="overlay"></div>
+    <div class="heroOverlay"></div>
 
-    <div class="creator-card">
+</header>
 
-        <div class="profile">
+<!-- PROFILE -->
+<section class="profileContainer">
 
-            <img src="https://i.imgur.com/ZQZSWrt.png">
+    <div class="profileCard">
 
-        </div>
+        <div class="profileTop">
 
-        <div class="info">
+            <img
+                src="https://i.imgur.com/ZQZSWrt.png"
+                class="avatar"
+                alt="Avatar">
 
-            <h1>All Tools AstroCat</h1>
+            <div class="title">
 
-            <span>Kazo Senpai</span>
+                <h1>All Tools AstroCat</h1>
 
-            <div class="grid">
-
-                <div>
-                    <i class="fa-solid fa-globe"></i>
-                    <small>NEGARA</small>
-                    <p id="country">Memuat...</p>
-                </div>
-
-                <div>
-                    <i class="fa-solid fa-mobile-screen"></i>
-                    <small>DEVICE</small>
-                    <p id="device"></p>
-                </div>
-
-                <div>
-                    <i class="fa-brands fa-chrome"></i>
-                    <small>BROWSER</small>
-                    <p id="browser"></p>
-                </div>
-
-                <div>
-                    <i class="fa-solid fa-signal"></i>
-                    <small>STATUS</small>
-                    <p class="online">
-                        ● Online
-                    </p>
-                </div>
+                <p>
+                    AstroCat !
+                </p>
 
             </div>
 
-            <div class="battery">
+        </div>
 
-                <i class="fa-solid fa-battery-half"></i>
+        <div class="infoGrid">
 
-                <div class="battery-bar">
+            <div class="infoBox">
 
-                    <div id="batteryFill"></div>
+                <i class="fa-solid fa-earth-asia"></i>
 
-                </div>
+                <small>NEGARA</small>
 
-                <span id="batteryText">
-                    --
+                <span id="country">
+                    Loading...
                 </span>
+
+            </div>
+
+            <div class="infoBox">
+
+                <i class="fa-solid fa-mobile-screen"></i>
+
+                <small>DEVICE</small>
+
+                <span id="device">
+                    Loading...
+                </span>
+
+            </div>
+
+            <div class="infoBox">
+
+                <i class="fa-brands fa-safari"></i>
+
+                <small>BROWSER</small>
+
+                <span id="browser">
+                    Loading...
+                </span>
+
+            </div>
+
+            <div class="infoBox">
+
+                <i class="fa-solid fa-circle"></i>
+
+                <small>STATUS</small>
+
+                <span class="online">
+
+                    Online
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="batteryCard">
+
+            <div class="batteryHeader">
+
+                <span>
+
+                    Battery
+
+                </span>
+
+                <span id="batteryPercent">
+
+                    --%
+
+                </span>
+
+            </div>
+
+            <div class="batteryBar">
+
+                <div id="batteryFill"></div>
 
             </div>
 
@@ -95,17 +133,163 @@
 
     </div>
 
-</header>
-
-<section class="tools">
-
-<h2>Semua Tools</h2>
-
-<p>
-Bagian ini nanti berisi semua tools.
-</p>
-
 </section>
+
+<!-- TOOLS -->
+<main class="toolsSection">
+
+    <div class="sectionTitle">
+
+        <h2>
+
+            All Tools
+
+        </h2>
+
+        <p>
+
+            Kumpulan berbagai tools yang akan terus bertambah.
+
+        </p>
+
+    </div>
+
+    <div class="searchBox">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            placeholder="Cari tools..."
+            id="searchInput">
+
+    </div>
+
+    <div class="toolsGrid">
+
+        <!-- TEMPLATE TOOL -->
+
+        <div class="toolCard">
+
+            <div class="toolIcon">
+
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+            </div>
+
+            <h3>
+
+                Coming Soon
+
+            </h3>
+
+            <p>
+
+                Tool akan ditambahkan nanti.
+
+            </p>
+
+            <button>
+
+                Open
+
+            </button>
+
+        </div>
+
+        <div class="toolCard">
+
+            <div class="toolIcon">
+
+                <i class="fa-solid fa-image"></i>
+
+            </div>
+
+            <h3>
+
+                Coming Soon
+
+            </h3>
+
+            <p>
+
+                Tool akan ditambahkan nanti.
+
+            </p>
+
+            <button>
+
+                Open
+
+            </button>
+
+        </div>
+
+        <div class="toolCard">
+
+            <div class="toolIcon">
+
+                <i class="fa-solid fa-code"></i>
+
+            </div>
+
+            <h3>
+
+                Coming Soon
+
+            </h3>
+
+            <p>
+
+                Tool akan ditambahkan nanti.
+
+            </p>
+
+            <button>
+
+                Open
+
+            </button>
+
+        </div>
+
+        <div class="toolCard">
+
+            <div class="toolIcon">
+
+                <i class="fa-solid fa-link"></i>
+
+            </div>
+
+            <h3>
+
+                Coming Soon
+
+            </h3>
+
+            <p>
+
+                Tool akan ditambahkan nanti.
+
+            </p>
+
+            <button>
+
+                Open
+
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+
+    © 2026 All Tools AstroCat
+
+</footer>
 
 <script src="script.js"></script>
 
